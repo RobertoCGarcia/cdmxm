@@ -104,10 +104,14 @@ function basic_preprocess_html(&$variables) {
 
   //Pro Drupal 7 Development
   // Add classes for the font styles
-  $classes = explode(' ', $vars['classes']);
-  $classes[] = theme_get_setting('font_family');
-  $classes[] = theme_get_setting('font_size');
-  $variables['classes'] = trim(implode(' ', $classes));
+
+
+  //$classes = explode(' ', $variables['classes_array']);
+  $variables['classes_array'][] = theme_get_setting('font_family');
+  $variables['classes_array'][] = theme_get_setting('font_size');
+  //$variables['classes_array'] = trim(implode(' ', $classes));
+  dpm($variables['classes_array']);
+  print " classes: " . print_r($variables['classes_array']);
 }
 
 /**
