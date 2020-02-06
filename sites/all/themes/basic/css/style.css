@@ -417,3 +417,26 @@ body:before {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*
+Drupal 7 Development Book Exercise
+ font family */
+.ff-sss {font-family: "Helvetica Nueue", "Trebuchet MS", Arial, "Nimbus Sans L",
+            FreeSans, sans-serif;}
+.ff-ssl {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;}
+.ff-a {font-family: Arial, Helvetica, sans-serif;}
+.ff-ss {font-family: Garamond, Perpetua, "Nimbus Roman No9 L",
+          "Times New Roman", serif;}
+.ff-sl {font-family: Baskerville, Georgia, Palatino, "Palatino Linotype",
+          "Book Antiqua", "URW Palladio L", serif;}
+.ff-m {font-family: "Myriad Pro", Myriad, Arial, Helvetica, sans-serif;}
+.ff-l {font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode",
+       Verdana, Geneva, sans-serif;}
+/* Base fontsize */
+.fs-10 {font-size:0.833em}
+.fs-11 {font-size:0.917em}
+.fs-12 {font-size:1em}
+.fs-13 {font-size:1.083em}
+.fs-14 {font-size:1.167em}
+.fs-15 {font-size:1.25em}
+.fs-16 {font-size:1.333em}
