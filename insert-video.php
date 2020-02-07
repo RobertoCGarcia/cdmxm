@@ -136,15 +136,16 @@ $node_data = array(
 
 // Define cookie session
 $cookie_session = $logged_user["session_name"] . '=' . $logged_user["sessid"];
+//$cookie_session =   $logged_user["sessid"] . '=' . $logged_user["session_name"];
 
 // cURL
 $curl = curl_init($request_url);
 curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json')); // Accept JSON response
-curl_setopt($curl, CURLOPT_HTTPHEADER, array( $xCSRFToken ) ); // Accept JSON response
+curl_setopt($curl, CURLOPT_HTTPHEADER, array( $xCSRFToken )); // Accept JSON response
 curl_setopt($curl, CURLOPT_POST, 1); // Do a regular HTTP POST
 curl_setopt($curl, CURLOPT_POSTFIELDS, $node_data); // Set POST data
 curl_setopt($curl, CURLOPT_HEADER, FALSE);  // Ask to not return Header
-curl_setopt($curl, CURLOPT_COOKIE, $cookie_session); // use the previously saved session
+curl_setopt($curl, CURLOPT_COOKIE, "$cookie_session"); // use the previously saved session
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($curl, CURLOPT_FAILONERROR, TRUE);
 
